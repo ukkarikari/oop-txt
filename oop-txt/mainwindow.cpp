@@ -17,5 +17,6 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     ui->helo->setText("worldd");
+    ui>helo>setText("cu");
 }
 
