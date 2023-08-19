@@ -1,3 +1,4 @@
+//mainwindow.h
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -16,7 +17,8 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+
+    void on_wordInput_returnPressed();
 
 private:
     Ui::MainWindow *ui;
