@@ -4,6 +4,7 @@
 
 #include <QMainWindow>
 #include "editword.h"
+#include "Word.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -26,5 +27,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    Word *first_word; /// it's the header of the list of words
 };
 #endif // MAINWINDOW_H
