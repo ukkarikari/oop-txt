@@ -10,14 +10,17 @@ CONFIG += c++17
 
 SOURCES += \
     Word.cpp \
+    editword.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     Word.h \
+    editword.h \
     mainwindow.h
 
 FORMS += \
+    editword.ui \
     mainwindow.ui
 
 # Default rules for deployment.

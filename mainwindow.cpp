@@ -23,11 +23,24 @@ void MainWindow::on_wordInput_returnPressed()
                                // graph when we get that done
 
     ui->labelstatus->setText(inputText); //prints last word inputted
-    ui->wordInput->clear();
+
+
+
+
+
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+    EditWord *edit = new EditWord(this, ui->labelstatus);
+    edit->show();
+
 }
 

@@ -16,6 +16,9 @@ public:
 
 private:
     QString wordText;
+    QColor color;
+    double font_size;
+
 };
 
 #endif // WORD_H

@@ -3,6 +3,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "editword.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,6 +20,9 @@ public:
 private slots:
 
     void on_wordInput_returnPressed();
+
+
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
