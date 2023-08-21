@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    first_word = nullptr;
 }
 
 void MainWindow::on_wordInput_returnPressed()
@@ -33,6 +34,7 @@ void MainWindow::on_wordInput_returnPressed()
         Word *prev = first_word;
         while(aux->next != nullptr)
         {
+            qDebug() << "a";
             prev = aux;
             aux = aux->next;
         }
@@ -48,6 +50,7 @@ void MainWindow::on_wordInput_returnPressed()
         while (cu != nullptr){
             qDebug() << cu->wordText;
             cu = cu->next;
+
         }
     }
 
